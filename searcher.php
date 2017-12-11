@@ -1,7 +1,7 @@
 <?php
-$host='192.168.43.242';
-$username='connect';
-$pwd='1234';
+$host='35.187.106.60';
+$username='root';
+$pwd='';
 $db="first_database";
 $con=mysqli_connect($host,$username,$pwd,$db) or die('Unable to connect');
 if(mysqli_connect_error($con))
