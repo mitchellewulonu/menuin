@@ -1,9 +1,10 @@
 <?php
-$host='35.187.106.60';
+$host='deductive-tree-188722:europe-west1:menuindb';
 $username='google';
 $pwd='1234';
 $db="first_database";
-$con=mysqli_connect($host,$username,$pwd,$db) or die('Unable to connect');
+$port = 3306; 
+$con=mysqli_connect($host,$username,$pwd,$db,$port) or die('Unable to connect');
 if(mysqli_connect_error($con))
 {
   echo "Failed to Connect to Database ".mysqli_connect_error();
